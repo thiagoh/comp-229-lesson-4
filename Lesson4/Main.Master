@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="PortfolioSite.Main" %>
+<%@ Import Namespace="PortfolioSite" %>
+
+<!-- Name: Thiago de Andrade Souza -->
+<!-- Student ID: 300886181 -->
+<!-- Date: September 30, 2016 -->
+<!-- Main.Master file -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+
+    <!-- Css Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="main-form">
+
+        <div class="container">
+
+            <header id="header" class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li role="presentation" runat="server" ID="li_home"><a href="<% = PageUtils.getPageLink("home") %>"><i class="fa fa-home"></i> Home</a></li>
+                        <li role="presentation" runat="server" ID="li_services"><a href="<% = PageUtils.getPageLink("services") %>"><i class="fa fa-book"></i> Services</a></li>
+                        <li role="presentation" runat="server" ID="li_projects"><a href="<% = PageUtils.getPageLink("projects") %>"><i class="fa fa-github"></i> Projects</a></li>
+                        <li role="presentation" runat="server" ID="li_about"><a href="<% = PageUtils.getPageLink("about") %>"><i class="fa fa-binoculars"></i> About</a></li>
+                        <li role="presentation" runat="server" ID="li_contact"><a href="<% = PageUtils.getPageLink("contact") %>"><i class="fa fa-phone"></i> Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 id="profile-tag" class="text-muted">
+                    <img src="Assets/images/thiagoh-1.jpg" alt="profile photo"/>
+                    Thiago Andrade
+                </h1>
+            </header>
+
+            <div role="main" class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <footer role="contentinfo">
+            </footer>
+        </div>
+    </form>
+
+    <!-- JS section -->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="node_modules/console-shim/console-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="Scripts/app.js"></script>
+
+    <asp:ContentPlaceHolder ID="bottom" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
