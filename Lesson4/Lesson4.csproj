@@ -114,7 +114,10 @@
     <Content Include="Assets\images\thiagoh-1.jpg" />
     <Content Include="Assets\images\video-service-url-parser.png" />
     <Content Include="Contact.aspx" />
+    <Content Include="Courses.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Departments.aspx" />
+    <Content Include="Enrollments.aspx" />
     <Content Include="Global.asax" />
     <Content Include="node_modules\console-shim\console-shim.js" />
     <Content Include="node_modules\console-shim\console-shim.min.js" />
@@ -132,7 +135,6 @@
     <Content Include="node_modules\console-shim\package.json" />
     <Content Include="node_modules\console-shim\README.md" />
     <None Include=".bin\node.cmd" />
-    <Content Include="Contact.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,6 +178,7 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services.aspx" />
+    <Content Include="Students.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\underscore.min.map" />
   </ItemGroup>
@@ -186,6 +189,27 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departments.aspx.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments.aspx.designer.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollments.aspx.cs">
+      <DependentUpon>Enrollments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Enrollments.aspx.designer.cs">
+      <DependentUpon>Enrollments.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContosoContext.cs" />
     <Compile Include="Models\Course.cs" />
@@ -199,13 +223,6 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.Master.cs">
-      <DependentUpon>Contact.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.Master.designer.cs">
-      <DependentUpon>Contact.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -238,6 +255,13 @@
     </Compile>
     <Compile Include="Services.aspx.designer.cs">
       <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
     </Compile>
     <Compile Include="Validator.cs" />
   </ItemGroup>
