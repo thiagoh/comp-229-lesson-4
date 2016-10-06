@@ -40,6 +40,24 @@ namespace PortfolioSite {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_home;
         
         /// <summary>
+        /// li_courses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_courses;
+        
+        /// <summary>
+        /// li_students control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_students;
+        
+        /// <summary>
         /// li_services control.
         /// </summary>
         /// <remarks>

@@ -34,6 +34,8 @@
                 <nav>
                     <ul class="nav nav-pills pull-right">
                         <li role="presentation" runat="server" ID="li_home"><a href="<% = PageUtils.getPageLink("home") %>"><i class="fa fa-home"></i> Home</a></li>
+                        <li role="presentation" runat="server" ID="li_courses"><a href="<% = PageUtils.getPageLink("courses") %>"><i class="fa fa-paper"></i> Courses</a></li>
+                        <li role="presentation" runat="server" ID="li_students"><a href="<% = PageUtils.getPageLink("students") %>"><i class="fa fa-book"></i> Students</a></li>
                         <li role="presentation" runat="server" ID="li_services"><a href="<% = PageUtils.getPageLink("services") %>"><i class="fa fa-book"></i> Services</a></li>
                         <li role="presentation" runat="server" ID="li_projects"><a href="<% = PageUtils.getPageLink("projects") %>"><i class="fa fa-github"></i> Projects</a></li>
                         <li role="presentation" runat="server" ID="li_about"><a href="<% = PageUtils.getPageLink("about") %>"><i class="fa fa-binoculars"></i> About</a></li>
