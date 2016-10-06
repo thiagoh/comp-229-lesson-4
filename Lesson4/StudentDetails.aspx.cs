@@ -23,22 +23,25 @@ namespace Lesson4 {
 
             using (ContosoContext db = new ContosoContext()) {
 
-                Student student = new Student();
+                Student student = null;
+                int studentID = Convert.ToInt32(Request.QueryString.Get("studentId"));
 
-                //int studentId = Request.QueryString.
+                if (studentID == 0) {
+                    student = new Student();
+                    db.Students.Add(student);
+                } else {
+                    student = (from studentRecords in db.Students
+                               where studentRecords.StudentID == studentID
+                               select studentRecords).FirstOrDefault();
+                }
+
                 student.LastName = lastNameTextBox.Text;
                 student.FirstMidName = firstNameTextBox.Text;
                 student.EnrollmentDate = Convert.ToDateTime(enrollmentDateTextBox.Text);
-
-                if (student.StudentID == 0) {
-                    db.Students.Add(student);
-                }else {
-                    //db.Students.
-                }
 
                 db.SaveChanges();
 
                 Response.Redirect("~/Students.aspx");
             }
+        }
     }
-}
