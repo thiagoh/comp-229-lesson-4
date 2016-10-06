@@ -28,5 +28,23 @@ namespace Lesson4 {
                 StudentsGridView.DataBind();
             }
         }
+
+        protected void StudentsGridView_RowDeleting(object sender, GridViewDeleteEventArgs e) {
+
+
+            int studentId = Convert.ToInt32(StudentsGridView.DataKeys[e.RowIndex].Values["StudentID"]);
+
+            using (ContosoContext db = new ContosoContext()) {
+
+                Student student = (from studentRecords in db.Students
+                                   where studentRecords.StudentID == studentId
+                                   select studentRecords).FirstOrDefault();
+
+                db.Students.Remove(student);
+                db.SaveChanges();
+
+                fillStudents();
+            }
+        }
     }
 }

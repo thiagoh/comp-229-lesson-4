@@ -178,6 +178,7 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Services.aspx" />
+    <Content Include="StudentDetails.aspx" />
     <Content Include="Students.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\underscore.min.map" />
@@ -255,6 +256,13 @@
     </Compile>
     <Compile Include="Services.aspx.designer.cs">
       <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetails.aspx.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDetails.aspx.designer.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Students.aspx.cs">
       <DependentUpon>Students.aspx</DependentUpon>
